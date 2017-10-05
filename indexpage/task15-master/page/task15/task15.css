@@ -859,7 +859,7 @@ a.tdl:hover {
 */
 /*主体部分*/
 main {
-  margin: 30px auto 170px;
+  margin: 10px auto 170px;
   width: 65%;
 }
 /*main*/
@@ -929,6 +929,13 @@ main {
   .conne-one p {
     padding: 0;
   }
+  .conne-one a{
+  	font-size: 28px;
+  }
+  .conne-p2{
+  	font-size: 16px;
+  	margin: 5px 28px;
+  }
   .conne-one {
     border-right: none;
     width: 100%;
@@ -938,11 +945,11 @@ main {
     padding-left: 0;
     float: none;
   }
-  .conne-p3 {
+  .conne-p3 ,.conne-p4{
+  	font-size: 14px;
     text-align: center;
   }
   .conne-one div {
-    margin-top: 20px;
     float: none;
     margin-left: auto;
     margin-right: auto;
@@ -954,6 +961,9 @@ main {
     text-align: center;
     margin: 0 auto;
     width: 80%;
+  }
+  .connection{
+  	margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
@@ -1284,4 +1294,14 @@ main {
     margin-right: 0;
     width: 10%;
   }
+}
+@media only screen and (max-width: 768px){
+	 .hl-p{
+	 	margin-bottom: 10px;
+	 }
+	 .serail{
+	 	line-height: 50px;
+	 	height: 50px;
+	 	width: 50px;
+	 }
 }

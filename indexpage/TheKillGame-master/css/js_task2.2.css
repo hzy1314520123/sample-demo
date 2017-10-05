@@ -11,7 +11,7 @@ body {
 header {
 	text-align: center;
 	font-size: 20px;
-	line-height: 4rem;
+	line-height: 2.5rem;
 	border-bottom: solid 1px white;
 }
 
@@ -95,7 +95,7 @@ header {
 /*脚步结尾*/
 
 .footerbg {
-	height: 5rem;
+	height: 4rem;
 	opacity: 0.5;
 	background-color: #6dd2e9;
 }
@@ -105,17 +105,17 @@ header {
 }
 
 footer {
-	height: 5rem;
+	height: 4rem;
 }
 
 footer div {
 	text-align: center;
 	margin-top: 0.6rem;
-	height: 3.8rem;
+	height: 2.8rem;
 	width: 42%;
-	font-size: 1.7rem;
+	font-size: 18px;
 	color: white;
-	line-height: 3.8rem;
+	line-height: 2.8rem;
 	border-radius: 0.5rem;
 }
 

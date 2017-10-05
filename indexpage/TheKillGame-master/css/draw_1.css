@@ -67,12 +67,12 @@ main{
 .footer_1 button{
 	display: block;
     margin: 30px auto 0;
-    height: 50px;
+    height: 40px;
     width: 78%;
     color: white;
     border-radius: 5px;
-    line-height: 48px;
-    font-size: 24px;
+    line-height: 40px;
+    font-size: 18px;
     text-align: center;
     background-color: #fbb438;
 }

@@ -48,7 +48,7 @@ main{
 	text-align: center;
 	box-sizing: border-box;
 	width: 20%;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 .match_p2{
@@ -63,9 +63,9 @@ main{
 	overflow: hidden;
 	box-sizing: border-box;
 	padding: 0 30px 40px;
-	font-size: 26px;
+	font-size: 18px;
 	color: #8C8C8C;
-	letter-spacing: 15px;
+	letter-spacing: 5px;
 }
 .match_p2t div{
 	text-align: center;
@@ -85,8 +85,8 @@ main{
 }
 
 .match_p2d{
-	height: 60px;
-	line-height: 60px;
+	height: 50px;
+	line-height: 40px;
 	text-align: center;
 	color: #2BBDE0;
 	font-size: 28px;
@@ -95,36 +95,28 @@ main{
 }
 .match_p2d button{
 	color: #2BBDE0;
-	font-size: 28px;
+	font-size: 18px;
 	background-color: white;
 	border: none;
 }
 .match_p2t p{
 	display: inline-block;
 }
-@media only screen and (min-width: 320px) and (max-width: 550px) {
-	.match_p2t div{
-		width: 100%;
-		margin-top: 0;
-	}
-	.match_p2t {
-		padding: 0 0 40px;
-	}
-}
+
 
 
 /*词组*/
 .word{
 	box-sizing: border-box;
-	padding: 0 30px 30px;
+	padding: 0 30px ;
 	margin: 0 auto;
 	width: 95%;
-	height: 200px;
+	height: 120px;
 	background-color: white;
 }
 .word div{
-	line-height: 90px;
-	font-size: 28px;
+	line-height: 45px;
+	font-size: 20px;
 	color: #8C8C8C;
 	border-bottom: solid 1px #CCCCCC;
 }
@@ -218,13 +210,36 @@ input[type=range]:focus {
 	color: white;
 	margin: 10px auto 0;
 	width: 95%;
-	font-size: 40px;
+	font-size: 24px;
 	text-align: center;
 	background-color: orange;
-	height: 90px;
-	line-height: 90px;
+	height: 75px;
+	line-height: 75px;
 }
 
-
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+	.match_p2t div{
+		width: 50%;
+		margin-top: 0;
+	}
+	.match_p2t {
+		padding: 0 0 40px;
+	}
+	.match_p1{
+		font-size: 1.5rem;
+	}
+	.player_nb1,.player_nb{
+		font-size: 18px;
+	}
+	.deal{
+		height: 60px;
+		line-height: 60px;
+		font-size: 20px;
+	}
+	.word div{
+		font-size: 18px;
+	}
+	
+}
 //
 //		

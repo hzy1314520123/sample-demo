@@ -14,7 +14,7 @@ header {
 header p {
 	margin: 0 auto;
 	display: inline-block;
-	font-size: 28px;
+	font-size: 18px;
 }
 
 .icon-xiangzuo,
@@ -144,17 +144,17 @@ main {
 }
 
 footer {
-	height: 5rem;
+	height: 4.5rem;
 }
 
 footer div {
 	text-align: center;
 	margin-top: 0.6rem;
-	height: 3.8rem;
+	height: 2.8rem;
 	width: 42%;
-	font-size: 1.7rem;
+	font-size: 18px;
 	color: white;
-	line-height: 3.8rem;
+	line-height: 2.8rem;
 	border-radius: 0.5rem;
 }
 

@@ -21,7 +21,7 @@ header {
 header p {
 	margin: 0 auto;
 	display: inline-block;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 .icon-xiangzuo,.icon-cha{
@@ -99,7 +99,7 @@ main {
 
 .hptopone {
 	color: #000000;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
     background-color: #f3c881;
     line-height: 15.5vw;
@@ -171,12 +171,12 @@ main {
 }
 
 .footer-title {
-	height: 3.5rem;
+	height: 2.5rem;
 	width: 80%;
 	border-radius: 0.5rem;
 	margin: 0 auto;
-	font-size: 2rem;
-	line-height: 3.5rem;
+	font-size: 18px;
+	line-height: 2.5rem;
 	background-color: orange;
 }
 

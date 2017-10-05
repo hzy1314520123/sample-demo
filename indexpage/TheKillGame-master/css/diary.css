@@ -20,7 +20,7 @@ header {
 header p {
 	margin: 0 auto;
 	display: inline-block;
-	font-size: 28px;
+	font-size: 18px;
 }
 
 .icon-xiangzuo,.icon-cha{
@@ -48,7 +48,6 @@ main {
 }
 
 .shop {
-	margin-top: 60px;
 	width: 33%;
 }
 
@@ -59,7 +58,7 @@ main {
 
 .content {
 	border: solid 3px white;
-    margin: 65px auto;
+    margin: 20px auto;
     background-color: #0044CC;
     max-height: 160px;
     max-width: 160px;
@@ -69,7 +68,7 @@ main {
 
 .hptopone {
 	color: #8C8C8C;
-	font-size: 1.5rem;
+	font-size: 18px;
 	text-align: center;
     background-color: #f3c881;
     line-height: 15.5vw;
@@ -141,11 +140,11 @@ main {
 }
 
 .footer-title {
-	height: 3.5rem;
+	height: 2.5rem;
 	width: 80%;
 	border-radius: 0.5rem;
 	margin: 0 auto;
-	font-size: 2rem;
-	line-height: 3.5rem;
+	font-size: 18px;
+	line-height: 2.5rem;
 	background-color: #f8B455;
 }
