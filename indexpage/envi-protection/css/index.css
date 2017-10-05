@@ -1,0 +1,97 @@
+
+
+form.search{
+	position: relative;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+form.search i{
+	position: absolute;
+    right: 10px;
+    top: 13px;
+    color: #999;
+    cursor: pointer;
+}
+.jie-add{
+	position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+}
+/*start 面板，文章简视*/
+.wrap{
+    float: left;
+    width: 100%;
+    min-height: 300px;
+}
+.fly-panel{
+	padding: 5px 0;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.layui-tab-item>li{
+    position: relative;
+    height: 45px;
+    margin-top: 0;
+    padding: 10px 0 10px 75px;
+    border-bottom: 1px dotted #E9E9E9;
+}
+.layui-tab-item>li:last-child{
+	border: none;
+}
+.layui-tab-title  .layui-this:after{
+	border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #5FB878;
+}
+.fly-list-avatar{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+
+}
+.fly-list-avatar>img{
+	display: inline-block;
+	width: 45px;
+    height: 45px;
+    border-radius: 2px;
+}
+h2{
+    line-height: 26px;
+    font-size: 0;
+}
+h2>a{
+	max-width: 86%;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+}
+h2>a:hover{
+	color: #009E94;
+}
+.info{
+	position: relative;
+}
+.info>span{
+	display: inline-block;
+    padding-right: 15px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.edit-click{
+	position: absolute;
+    right: 0;
+    top: -2px;
+
+}
+.edit-click>span{
+    padding-right: 15px;
+}
+.edit-click i{
+	padding-right: 5px;
+}

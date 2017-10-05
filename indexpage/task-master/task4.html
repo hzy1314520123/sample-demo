@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="task4.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	</head>
+	<body>
+		<main>
+			<div class="img-bg">
+				<div class="content">
+					<div class="model"></div>
+					<div class="phonenb">
+						<div class="icon-phone"></div>
+						<input type="text" class="phonenb1" placeholder="请输入手机号"  value="admin"/>
+					</div>
+					<div class="passwordone">
+						<div class="icon-lock"></div>
+						<input type="password" class="psw"  placeholder="请输入密码" value="123456" />
+					</div>
+					<div class="login"><a href="#">注册</a></div>
+				    <div class="forget"><a href="#">忘记密码</a></div>
+				    <div class="hint"></div>
+			    </div>
+		    </div>
+		</main>
+		
+	</body>
+</html>
+<script>
+	$(".login").click(function() {
+		var user = $(".phonenb1").val();
+		var password = $(".psw").val();
+		if(user === "" || password === "") {
+			alert("请输入用户名和密码")
+		} else {
+			$.post("/carrots-admin-ajax/a/login", {
+					"name": user,
+					"pwd": password
+				},
+				function(data) {
+					var jsons = JSON.parse(data);
+					$(".hint").text(jsons.message);
+					if(jsons.message === "success") {
+						window.location.href = ('http://dev.admin.carrots.ptteng.com/#/dashboard ');
+					} else {
+						document.getElementById("txt").innerHTML = jsons.message;
+					}
+				});
+		}
+	});
+</script>

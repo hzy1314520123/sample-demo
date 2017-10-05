@@ -1,0 +1,164 @@
+body {
+	width: 100%;
+}
+
+.opation,
+header,
+.subnav,
+.hptopone,
+.snb,
+.footer-title {
+	text-align: center;
+}
+
+
+/*页眉部分*/
+
+header {
+	padding: 15px 0px 5px;
+}
+
+header p {
+	margin: 0 auto;
+	display: inline-block;
+	font-size: 24px;
+}
+
+.icon-mulu,.icon-cha{
+	font-size: 24px;
+}
+.icon-mulu{
+	margin-left: 10px;
+}
+.icon-cha{
+	margin-right: 10px;
+}
+
+/*发言结束*/
+
+.subnav {
+	padding: 15px 10px 15px 30px;
+	margin-top: 46px;
+	position: relative;
+	font-size: 20px;
+	text-align: left;
+	color: #8C8C8C;
+	background-color: #BAE9F4;
+}
+
+.subnav p {
+	margin: 0;
+}
+
+.subnav-btn {
+	display: block;
+	height: 30px;
+	width: 30px;
+	background: url(../img13/发言讨论结束，投票_03.png) left no-repeat;
+	background-size: 100%;
+}
+
+.icon-xia {
+	position: absolute;
+	top: 48px;
+	z-index: 88;
+	color: #BAE9F4;
+}
+
+
+/*中间部分*/
+
+main {
+	z-index: 1;
+	position: relative;
+	padding-top: 1px;
+	padding-bottom: 6rem;
+	background-color: #2BBDE0;
+}
+
+.shop {
+	width: 33%;
+}
+
+.msg {
+	margin: 25px 0px 40px 38px;
+	color: white;
+}
+
+.content {
+	border: solid 3px white;
+    margin: 0 auto;
+    background-color: #0044CC;
+    width: 22vw;
+    height: 22vw;
+}
+
+.hptopone {
+	text-align: center;
+    background-color: #f3c881;
+    line-height: 16.5vw;
+    height: 16.5vw;
+}
+
+.snb {
+	background-color: #83b09a;
+	 font-size: 2.5vw;
+    color: white;
+    line-height: 5.5vw;
+    text-align: center;
+    height: 5.5vw;
+}
+
+.option {
+	overflow: hidden;
+	margin: 15px auto;
+	width: 63.75%;
+}
+
+.option div {
+	text-align: center;
+    float: left;
+    padding: 3% 0;
+    border-left: solid 1px #5AC0CE;
+    background-color: white;
+    width: 23.5%;
+}
+
+.icon-chakan {
+	color: #F89406;
+}
+
+.icon-miaozhunjing {
+	color: #40AA29;
+}
+
+.icon-shizi {
+	color: red;
+}
+
+.option {
+	visibility: hidden;
+}
+
+.shop:hover .option {
+	visibility: visible;
+}
+
+
+/*底部*/
+
+.footer-btn {
+	z-index: 99;
+	height: 5rem;
+	background-color: #5AC0CE;
+}
+
+.footer-title {
+	height: 3.5rem;
+	width: 80%;
+	border-radius: 0.5rem;
+	margin: 0.8rem auto 1rem;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	background-color: #f8B455;
+}

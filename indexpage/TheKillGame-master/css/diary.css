@@ -1,0 +1,151 @@
+
+
+.opation,
+header,
+.subnav,
+.hptopone,
+.snb,
+.footer-title {
+	text-align: center;
+}
+
+/*页眉部分*/
+
+header {
+	margin: 0 auto;
+	border-bottom: 1px solid white;
+	padding: 15px 0px 5px;
+}
+
+header p {
+	margin: 0 auto;
+	display: inline-block;
+	font-size: 28px;
+}
+
+.icon-xiangzuo,.icon-cha{
+	font-size: 24px;
+}
+.icon-xiangzuo{
+	color: white;
+	margin-left: 10px;
+}
+.icon-cha{
+	color: white;
+	margin-right: 10px;
+}
+
+
+
+/*中间部分*/
+
+main {
+	min-height: 800px;
+	z-index: 1;
+	position: relative;
+	padding:60px 0 100px;
+	background-color: #2BBDE0;
+}
+
+.shop {
+	margin-top: 60px;
+	width: 33%;
+}
+
+.msg {
+	margin: 25px 0px 40px 38px;
+	color: white;
+}
+
+.content {
+	border: solid 3px white;
+    margin: 65px auto;
+    background-color: #0044CC;
+    max-height: 160px;
+    max-width: 160px;
+    width: 20vw;
+    height: 20vw;
+}
+
+.hptopone {
+	color: #8C8C8C;
+	font-size: 1.5rem;
+	text-align: center;
+    background-color: #f3c881;
+    line-height: 15.5vw;
+    max-height: 122px;
+    height: 15.5vw;
+}
+
+.snb {
+	background-color: #83b09a;
+	 font-size: 2.5vw;
+    color: white;
+    line-height: 4.5vw;
+    text-align: center;
+    max-height: 37.5px;
+    height: 4.5vw;
+}
+
+.option {
+	overflow: hidden;
+	margin: 15px auto;
+	width: 63.75%;
+}
+
+.option div {
+	text-align: center;
+    float: left;
+    padding: 3% 0;
+    border-left: solid 1px #5AC0CE;
+    background-color: white;
+    width: 23.5%;
+}
+
+.icon-chakan {
+	color: #F89406;
+}
+
+.icon-miaozhunjing {
+	color: #40AA29;
+}
+
+.icon-shizi {
+	color: red;
+}
+
+.option {
+	visibility: hidden;
+}
+
+.shop:hover .option {
+	visibility: visible;
+}
+@media only screen and (min-width: 768px) {
+	.snb {
+		font-size: 1.3rem;
+		line-height: 195%;
+	}
+	.hptopone{
+		line-height: 520%;
+	}
+	
+}
+
+/*底部*/
+
+.footer-btn {
+	padding: 1rem 0;
+	z-index: 99;
+	background-color: #5AC0CE;
+}
+
+.footer-title {
+	height: 3.5rem;
+	width: 80%;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	background-color: #f8B455;
+}

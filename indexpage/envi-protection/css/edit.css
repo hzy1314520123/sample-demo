@@ -1,0 +1,14 @@
+.fly-panel{
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+h2{    
+	position: relative;
+    font-size: 14px;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    line-height: 30px;
+    background-color: #F2F2F2;
+    }

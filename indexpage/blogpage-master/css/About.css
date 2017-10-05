@@ -1,0 +1,163 @@
+
+/*关于我们*/
+#ina{
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px)
+}
+
+.fade-right {
+	opacity: 0;
+	-webkit-transform: translateX(-100px);
+	-moz-transform: translateX(-100px);
+	-ms-transform: translateX(-100px);
+	transform: translateX(-100px);
+	-webkit-transition: -webkit-transform .6s ease-out, opacity .6s ease-out;
+	transition: transform .6s ease-out, opacity .6s ease-out
+}
+
+.fade-left {
+	opacity: 0;
+	-webkit-transform: translateX(100px);
+	-moz-transform: translateX(100px);
+	-ms-transform: translateX(100px);
+	transform: translateX(100px);
+	-webkit-transition: -webkit-transform .6s ease-out, opacity .6s ease-out;
+	transition: transform .6s ease-out, opacity .6s ease-out
+}
+#about {
+	padding: 120px 0 145px 0;
+}
+
+.container {
+	max-width: 900px;
+}
+
+.logo {
+	margin-top: 100px;
+}
+
+.logo h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	;
+	padding: 0;
+	margin: 0;
+	font-size: 65px;
+	line-height: 0.87;
+	font-weight: bold;
+}
+
+.logo h1 span {
+	display: block;
+}
+
+.logo h4 {
+	font-family: "Microsoft YaHei", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-indent: 4px;
+}
+
+.slogon {
+	margin-top: 100px;
+	padding-left: 0;
+	letter-spacing: 1px;
+}
+
+.city img {
+	width: 100%;
+	max-height: 70px;
+	margin-top: 0px;
+}
+
+.addr address {
+	margin: 15px 0 0 4px;
+	letter-spacing: 2px;
+}
+
+
+
+/*尾部*/
+#contact {
+	background: url(../img/footer-bg.jpg) center top no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#contact .dark-bg {
+	padding: 90px 0 120px 0;
+	background-color: rgba(47, 46, 46, 0.7);
+	color: #fff;
+}
+
+#contact .dark-bg p {
+	margin: 25px 100px;
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+#contact .dark-bg h4 {
+	font-size: 16px;
+}
+
+#contact .container-icon {
+	margin-top: 10px;
+	font-size: 38px;
+}
+
+#contact .owl-controls {
+	margin-top: 10px;
+}
+
+#contact .contact-btn img {
+	margin: 70px 0 20px 0;
+	width: 180px;
+	height: 180px;
+}
+
+#contact .contact-btn h4 {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#contact .contact-btn p {
+	font-size: 16px;
+	margin: 5px;
+}
+
+#contact .clients {
+	margin-bottom: 50px;
+}
+
+#contact .clients img {
+	width: 130px;
+}
+
+.wechat {
+	width: 260px;
+}
+#inb {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1)
+}
+#contact-modal .contact-descr {
+	margin: 35px;
+}
+
+footer {
+	background-color: #2f2e2e;
+	color: #999;
+	padding: 30px 0;
+	line-height: 1.6;
+}
+
+

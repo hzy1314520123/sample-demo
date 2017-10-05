@@ -1,0 +1,137 @@
+/* 客服热线*/
+.head-top{
+	color: #1FB176;
+	
+}
+.headtop{
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	width: 65%;
+}
+.service{
+	font-size: 14px;
+	color: #1fb176;
+	text-align: left;
+}
+.share{
+	float: right;
+ text-align: right;
+}
+.share a{
+	font-size: 14px;
+	margin-left: 1rem;
+	font-weight: bold;
+	color: #1FB176;
+}
+@media only screen and (max-width:425px ) {
+	.headtop{
+		width: 90%;
+	}
+}
+
+/*页眉菜单*/
+header{
+	background-color:#1FB176; 
+	
+}
+.headerpart{
+	position: relative;
+	margin: 0 auto;
+	line-height: 100px;
+	height: 100px;
+	width: 65%;
+}
+.skill{
+	 height: 50px;
+   width: 100px;
+   margin-top: 25px;
+	background:url(img/职位列表1234_03.jpg) left no-repeat;
+	background-size: 100%;
+	float: left;
+}
+.head-menu{
+	font-size: 18px;
+	margin-right: -35px;
+	position: absolute;
+	right: 0;
+	font-family: "微软雅黑";
+	color: white;
+	text-align: center;
+	float: right;
+}
+.head-menu div{
+	line-height: 100px;
+	height: 100px;
+	width: 100px ;
+	float: left;
+}
+.head-menu a{
+	color: white;
+	text-decoration: none;
+}
+.head-menu a:hover{
+	color: white;
+	text-decoration: none;
+}
+.head-menu div:hover{
+	border-bottom:solid 0.3rem white;
+}
+.icon-mulu{
+	border: 1px white solid;
+	padding: 5px;
+	margin-top: 31px;
+	  ursor: pointer;
+	  display: none;
+      position: absolute;
+      right:-5px;
+      font-size: 24px;
+      color: white;
+      background-color:#1FB176; 
+}
+
+/*媒体查询*/
+@media only screen and (max-width:768px ) {
+	.headerpart{
+		line-height: 28px;
+		width: 65%;
+	}
+	.head-menu {
+		display: none;
+    }
+    .icon-mulu{
+    	display: block;
+    }
+    .modal-dialog{
+    	border-radius: 10px;
+    }
+    .modal-content{
+    	color: white;
+    	text-align: center;
+    	margin-top: 141px;
+    }
+    .modal-content a{
+    	margin-left: 10px;
+    	color: white;
+    	text-decoration: none;
+    }
+    .modal-content a:hover{
+    	color: white;
+    	text-decoration: none;
+    }
+    .modal-header{
+    	background-color: #1FB176;
+    }
+    .icon-zhiye,.icon-guanyuwomen,.icon-tuijian,.icon-shouye{
+    	margin-left: 15px;
+    	font-weight: bold;
+    	font-size: 24px;
+    }
+}
+@media only screen and (max-width:425px) {
+	.headerpart {
+		width: 90%;
+	}
+	
+}
+

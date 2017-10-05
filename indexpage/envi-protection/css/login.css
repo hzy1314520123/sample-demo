@@ -1,0 +1,43 @@
+body{
+	position: relative;
+	background: url(../img/logo-login.png);
+	background-repeat:no-repeat ;
+    background-position: center 20px;
+    background-color: #fff2df;
+}
+.layui-main-wrap {
+	width: 450px;
+	margin-top: 160px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    position: absolute;
+    box-shadow: 0 9px 30px -6px rgba(0,0,0,.2),0 18px 20px -10px rgba(0,0,0,.04),0 18px 20px -10px rgba(0,0,0,.04),0 10px 20px -10px rgba(0,0,0,.04);
+    -webkit-box-shadow:0 9px 30px -6px rgba(0,0,0,.2),0 18px 20px -10px rgba(0,0,0,.04),0 18px 20px -10px rgba(0,0,0,.04),0 10px 20px -10px rgba(0,0,0,.04);
+}
+.fly-panel{
+    padding: 10px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.layui-btn a{
+	color: white;
+}
+.layui-btn a:hover{
+	color: white;
+	text-decoration: none;
+}
+button{
+	width: 100%;
+}
+.layui-input-inline{
+	width: calc(100% - 120px)!important;
+}
+.layui-form-item{
+	margin-bottom: 0;
+}
+.layui-box.layui-upload-button{
+	width: 100%;
+}

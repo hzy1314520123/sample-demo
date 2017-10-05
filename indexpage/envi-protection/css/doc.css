@@ -1,0 +1,98 @@
+.wrap{
+    float: left;
+    width: 100%;
+    min-height: 300px;
+}
+.fly-panel{
+	padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+h1{
+	font-size: 24px;
+    line-height: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+}
+/*start 头部的文章发布信息*/
+.doc-info{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    background-color: #F2F2F2;
+    padding: 15px;
+    color: #999;
+}
+.doc-info>p{
+	position: absolute;
+}
+.doc-info>p:nth-of-type(1){
+	left: 76px;
+    bottom: 40px;
+}
+.doc-info>p:nth-of-type(2){
+    left: 76px;
+    bottom: 15px;
+}
+.doc-info>p:nth-of-type(1)>span:first-child{
+	margin-right: 10px;
+	color: #4f99cf;
+    font-size: 14px;
+}
+.doc-info>p:nth-of-type(1)>span:nth-of-type(2){
+	font-size: 12px;
+}
+.doc-info img{
+	    position: relative;
+    display: block;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 2px;
+}
+.info{
+    display: inline-block;
+    padding-right: 15px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #FF7200;
+}
+.info span{
+	margin-right: 10px;
+}
+.info i{
+	padding-right: 10px;
+}
+/*end 头部的文章发布信息*/
+.fly-panel>ul {
+	margin-bottom: 25px;
+}
+.fly-panel>p{
+    margin: 25px 0 20px;
+    min-height: 0;
+    line-height: 24px;
+    font-size: 14px;
+	text-indent: 2em;
+}
+.comment .info{
+    color: #009688;
+    cursor: pointer;
+    line-height: 22px;
+}
+.comment .info>span:hover{
+	transition: all 0.5s ease;
+    color: #c00;
+}
+.comment .info i{
+	font-size: 22px;
+}
+.comment>p{
+    margin: 25px 0 20px;
+    min-height: 0;
+    line-height: 24px;
+    font-size: 14px;
+}

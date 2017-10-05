@@ -1,0 +1,12 @@
+/*bootstrap轮播图*/
+.carousel-inner{
+	height: 30vw;
+}
+.item img{
+	height: 30vw;
+	width: 100%;
+}
+.carousel-indicators{
+	position: absolute;
+	bottom: -5px;
+}

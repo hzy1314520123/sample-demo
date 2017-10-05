@@ -1,0 +1,83 @@
+/*尾部部分*/
+footer a:hover{
+	border-bottom: solid 1px white;
+}
+footer{
+	color: white;
+	background-color: #1da36d;
+	height: 12rem;
+}
+.footerpart{
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	margin: auto ;
+	text-align: left;
+    width: 60%;
+}
+.footer-part{
+	float: left;
+}
+.footer-partone{
+	margin-left: 10rem;
+	float: left;
+}
+
+.wechat{
+	float: right;
+}
+.wechatone{
+	height: 6rem;
+	width: 6rem;
+	background: url(img/技能树首页_33.jpg)   left no-repeat;
+	background-size: 100%;
+}
+.fp-p{
+	margin-top: 5rem;
+}
+.fp-one{
+	margin-top: 2rem;
+}
+.fp-two{
+	margin-top: 2rem;
+}
+/*京号*/
+.copys{
+	border-top: solid 1px #1FB176;
+	color: white;
+	text-align: center;
+	background-color: #1da36d;
+	line-height: 2rem;
+	height: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+	footer{
+		height: 36rem;
+	}
+	.footerpart{
+		text-align: center;
+	}
+	.footer-part,.footer-partone,.wechat{
+		float: none;
+	}
+	.footer-partone{
+		margin-left: 0;
+		padding-top: 3rem;
+	}
+	.wechat{
+		padding-top: 3rem;
+	}
+	.wechatone{
+		margin: 2rem auto;
+	}
+}
+@media only screen and (max-width: 522px){
+	.copys{
+	       height:5rem
+	}		
+}
+@media only screen and (min-width: 522px){
+	.copys{
+	       line-height:3rem
+	       height:3rem
+	}		
+}	

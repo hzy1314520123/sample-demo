@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>文章</title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/doc.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="layui/layui.all.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="main ">
+				<a class="logo" href="">环保在身边！</a>
+				<div class="nav">
+					<!--start 登陆和非登陆需要做判断  if1-->
+					<a href="user.html"><img src="img/168.jpg"><span>名字啊</span></a>
+					<span><a href="login.html">退出</a></span>
+					<!--start 登陆和非登陆需要做判断  if2-->
+					<span>
+						<a href="">登陆</a>
+						<a href="login.html">注册</a>
+						<!--轻跳转至登陆、注册-->
+					</span>
+					<!--end 登陆和非登陆需要做判断-->
+				</div>
+			</div>
+		</div>
+		<!--header 可作为公共块-->
+		<div class="main">
+			<div class="layui-main layui-clear">
+				<div class="wrap">
+					<div class="content">
+						<div class="fly-panel layui-tab-content">
+							<h1>长长的标题，长长的标题，我是真的没在偷懒，真的...</h1>
+							<div class="doc-info">
+								<div><img src="img/168.jpg" /></div>
+								<p><span>作者</span><span>发布时间</span></p>
+								<p class="info">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+									<span><i class="hui hui-unie60b"></i>555</span>
+								</p>
+							</div>
+							<p>长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章，长长的文章...</p>
+						</div>
+
+						<!--<div>
+					</div> 或许要做个导航？-->
+						<div class="fly-panel ">
+							<ul>
+								<li class="comment">
+									<div class="about">
+										<img src="img/168.jpg" />
+										<cite>名字</cite>
+										<span>时间</span>
+									</div>
+									<p>太棒了，这个评论很重要！</p>
+									<div class="info">
+										<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+									</div>
+								</li>
+								<!--遍历li标签-->
+							</ul>
+							<div style="margin-bottom: 20px;">
+								<textarea class="layui-textarea" id="LAY_demo1" style="display: none"></textarea>
+							</div>
+							<button class="layui-btn">提交评论</button>
+						</div>
+					</div>
+				</div>
+				<aside>
+					<div class="fly-panel">
+						<h2>最多评论</h2>
+						<ul>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<!--后台最好遍历前十个热门帖就好？-->
+						</ul>
+					</div>
+					<div class="fly-panel">
+						<h2>最多评论</h2>
+						<ul>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<!--后台最好遍历前十个热门帖就好？-->
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<footer>
+			<p><span>项目名字</span><span>2017</span></p>
+			<p><span>开发者名字</span></p>
+		</footer>
+	</body>
+	<script>
+		//这个js是用来设置富文本编辑器以及获取值的.
+		layui.use('layedit', function() {
+			var layedit = layui.layedit,
+				$ = layui.jquery;
+
+			//构建一个默认的编辑器
+			var index = layedit.build('LAY_demo1');
+
+			//编辑器外部操作
+
+			//					alert(layedit.getContent(index)); 获取编辑器内容
+			//					alert(layedit.getText(index)); 获取编辑器纯文本内容
+			//					alert(layedit.getSelection(index));
+
+			$('button').on('click', function() {
+				var type = $(this).data('type');
+				alert(layedit.getText(index));
+			});
+			//start 设置编辑器属性
+			layedit.set({
+				uploadImage: {
+					url: '' //接口url
+						,
+					type: '' //默认post
+				}
+			});
+			layedit.build('LAY_demo1', {
+				tool: ['face', 'link', 'unlink', "image", '|', 'left', 'center', 'right'],
+				height: 180 //设置编辑器高度
+			});
+		});
+	</script>
+
+</html>

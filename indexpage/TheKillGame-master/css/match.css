@@ -1,0 +1,230 @@
+body{
+	margin: 0 auto;
+	max-width: 640px;
+}
+/*头部*/
+header{
+	z-index: 99;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	background-color:#2BBDE0;
+}
+.icon-tips{
+	margin-right: 10px;
+	float: right;
+	display: inline-block;
+	font-size: 28px;
+}
+.icon-xiangzuo{
+	color: white;
+	margin-left: 10px;
+	display: inline-block;
+	float: left;
+	font-size: 28px;
+}
+
+/*玩家匹配*/
+main{
+	padding-top: 10px;
+	margin: 60px auto 0;
+	background-color: #f0f0f0;
+}
+.match_p{
+	display: flex;
+	align-items: center;
+	background-color: white;
+	margin:0 auto 10px;
+	width: 95%;
+}
+.match_p1{
+	z-index: 22;
+	position: relative;
+	display: flex;
+	float: left;
+	padding: 0 5%;
+	text-align: center;
+	box-sizing: border-box;
+	width: 20%;
+	font-size: 2.5rem;
+}
+
+.match_p2{
+	flex: 1;
+	float: right;
+	width: 80%;
+}
+/*玩家匹配右边部分*/
+.match_p2t{
+	min-height: 200px;
+	border-left: solid 1px #CCCCCC;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 30px 40px;
+	font-size: 26px;
+	color: #8C8C8C;
+	letter-spacing: 15px;
+}
+.match_p2t div{
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	float: left;
+	width: 50%;
+}
+.icon_f{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	margin-right: 10px;
+	background-color: orange;
+}
+
+.match_p2d{
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #2BBDE0;
+	font-size: 28px;
+	border-top: solid 1px #CCCCCC;
+	border-left: solid 1px #CCCCCC;
+}
+.match_p2d button{
+	color: #2BBDE0;
+	font-size: 28px;
+	background-color: white;
+	border: none;
+}
+.match_p2t p{
+	display: inline-block;
+}
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+	.match_p2t div{
+		width: 100%;
+		margin-top: 0;
+	}
+	.match_p2t {
+		padding: 0 0 40px;
+	}
+}
+
+
+/*词组*/
+.word{
+	box-sizing: border-box;
+	padding: 0 30px 30px;
+	margin: 0 auto;
+	width: 95%;
+	height: 200px;
+	background-color: white;
+}
+.word div{
+	line-height: 90px;
+	font-size: 28px;
+	color: #8C8C8C;
+	border-bottom: solid 1px #CCCCCC;
+}
+
+/*玩家数量*/
+.player_nb{
+	box-sizing: border-box;
+	padding:10px 30px 30px;
+	width: 95%;
+	margin: 10px auto 0;
+	background-color: white;
+	font-size: 28px;
+}
+.player_nb1{
+	color: orange;
+	border: none;
+	width: 50px;
+	margin: 0 20px;
+	font-size: 30px;
+	background-color: #F4F5F4;
+}
+
+.player_nb p{
+	display: inline-block;
+	color: orange;
+}
+.sliding_1{
+	width: 85%;
+}
+/*滑块*/
+.sliding{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.sliding_1{
+	margin: 0 10px;
+}
+input[type=range] {
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-thumb {
+	
+} 
+
+.sliding_1{
+	height: 5px;
+	background: linear-gradient(to right , #FFA500, #ffe88d 30% ,#ffe88d 10%);
+  
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 35px;
+    width: 60px;
+    background: url(../images/设置页面_04.png) center no-repeat;
+    background-size: 100%;
+    border: solid 2px orange;
+    border-radius: 4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+.minus ,.puls{
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	color: orange;
+	font-size: 24px;
+	line-height:24px;
+	text-align: center;
+	font-weight: bold;
+	background-color: white;
+	border: 1px solid #CCCCCC;
+}
+@media only screen and (min-width: 180px) and (max-width: 640px) {
+	input[type=range]::-webkit-slider-thumb{
+		height: 26px;
+		width: 40px;
+	}
+}
+
+
+
+
+/*发牌*/
+.deal{
+	display: block;
+	border-radius: 5px;
+	color: white;
+	margin: 10px auto 0;
+	width: 95%;
+	font-size: 40px;
+	text-align: center;
+	background-color: orange;
+	height: 90px;
+	line-height: 90px;
+}
+
+
+//
+//		

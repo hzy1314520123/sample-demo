@@ -1,0 +1,231 @@
+
+
+.opation,
+header,
+.subnav,
+.hptopone,
+.snb,
+.footer-title {
+	text-align: center;
+}
+
+
+/*页眉部分*/
+
+header {
+	margin: 0 auto ;
+	padding: 15px 0px 5px;
+	border-bottom: solid 1px white;
+}
+
+header p {
+	margin: 0 auto;
+	display: inline-block;
+	font-size: 22px;
+}
+
+.icon-xiangzuo,.icon-cha{
+	font-size: 24px;
+}
+.icon-xiangzuo{
+	margin-left: 10px;
+}
+.icon-cha{
+	margin-right: 10px;
+}
+/*发言结束*/
+
+.subnav {
+	padding: 15px 10px 15px 30px;
+	margin-top: 48px;
+	position: relative;
+	text-align: left;
+	color: #000000;
+	background-color: #BAE9F4;
+}
+
+.subnav p {
+	margin: 0;
+}
+
+.subnav-btn {
+	display: block;
+	height: 30px;
+	width: 30px;
+	background: url(../img13/发言讨论结束，投票_03.png) left no-repeat;
+	background-size: 100%;
+}
+
+.icon-xia {
+	font-size: 24px;
+	position: absolute;
+	top: 44px;
+	z-index: 88;
+	color: #BAE9F4;
+}
+
+
+/*中间部分*/
+
+main {
+	min-height: 800px;
+	z-index: 1;
+	position: relative;
+	padding:10px 0 100px;
+	background-color: #2BBDE0;
+}
+.vote{
+	margin-top: 20px;
+}
+
+.shop {
+	width: 33%;
+}
+
+.msg {
+	margin: 0 0 0 38px;
+	color: white;
+}
+
+.content {
+	border: solid 3px white;
+    margin: 0 auto;
+    background-color: #0044CC;
+    max-height: 140px;
+    max-width: 140px;
+    width: 20vw;
+    height: 20vw;
+}
+
+.hptopone {
+	color: #000000;
+	font-size: 20px;
+	text-align: center;
+    background-color: #f3c881;
+    line-height: 15.5vw;
+    max-height: 110px;
+    height: 15.5vw;
+}
+
+.snb {
+	background-color: #83b09a;
+	 font-size: 14px;
+    color: white;
+    line-height: 4.5vw;
+    text-align: center;
+    max-height: 30.5px;
+    height: 4.5vw;
+}
+.icon-dao_cutter{
+	margin: 0 auto;
+}
+.option {
+	overflow: hidden;
+	margin: 15px auto;
+	width: 63.75%;
+}
+
+.option div {
+	text-align: center;
+    padding: 3% 0;
+    border-left: solid 1px #5AC0CE;
+    background-color: white;
+    width: 26px;
+}
+
+.icon-chakan {
+	color: #F89406;
+}
+
+.icon-miaozhunjing {
+	color: #40AA29;
+}
+
+.icon-shizi {
+	color: red;
+}
+
+.option {
+	visibility: hidden;
+}
+
+.shop:hover .option {
+	visibility: visible;
+}
+@media only screen and (min-width: 768px) {
+	.snb {
+		line-height: 195%;
+	}
+	.hptopone{
+		line-height: 520%;
+	}
+	
+}
+
+/*底部*/
+
+.footer-btn {
+	padding: 1rem 0;
+	z-index: 99;
+	background-color: #2BBDE0;
+}
+
+.footer-title {
+	height: 3.5rem;
+	width: 80%;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	background-color: orange;
+}
+
+/*模态框*/
+
+.modal {
+	z-index: 88;
+	background-color: #000000;
+	opacity: 0.4;
+}
+
+.bg-model {
+	position: absolute;
+	top: 0%;
+	display: none;
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+
+.content1 {
+	box-shadow: 2px 2px 2px #8C8C8C;
+    text-align: center;
+    position: absolute;
+    left: 11%;
+    top: 40%;
+    border-radius: 8px;
+    width: 78%;
+    height: 24%;
+    background-color: #fff;
+}
+.content_p{
+    height: 73%;
+    border-bottom: solid 1px #CCCCCC;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.content_d {
+	overflow: hidden;
+}
+.content_d div{
+	text-align: center;
+	float: left;
+	width: 49%;
+	line-height: 250%;
+}
+.b_l{
+	border-right: solid 1px #CCCCCC;
+}

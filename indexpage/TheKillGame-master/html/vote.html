@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>投票</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/js_task2-reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/js_task2-common.css" />
+		<link rel="stylesheet" href="../font7/iconfont.css" />
+		<link rel="stylesheet" href="../css/killer.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	</head>
+
+	<body class="centerw">
+		<header class=" nav centerw fiexdt">
+			<audio src="../audio/财富自由.mp3" autoplay="autoplay"></audio>
+			<p>投票</p>
+			<span class="iconfont icon-cha r"></span>
+		</header>
+		<div class="subnav">
+			<p>发言讨论结束，大家请投票 <span class="subnav-btn r"></span></p>
+			<span class="iconfont icon-xia"></span>
+		</div>
+		<main>
+			<div class="msg">点击得票数最多的人的头像</div>
+			<div class="vote ovfl"></div>
+		</main>
+		<footer class="footer-btn  fiexdb centerw">
+			<div class="footer-title">
+				<a onclick="voteb()">确定</a>
+			</div>
+		</footer>
+	</body>
+
+</html>
+
+<script type="text/javascript">
+/*当前点击对象 并储存*/	
+	var votearry = [];
+    $(function ping() {
+		$(".content").click(function(e) {
+			$(".snb").css("background-color","#83b09a");
+			$(this).children(".snb").css("background-color","#2BBDE0");
+			var hptopone = $(this).children(".hptopone").text();
+			var snb = $(this).children(".snb").text();
+			localStorage.setItem("hptoponec",hptopone);
+			localStorage.setItem("snbb",snb);
+		});
+	});
+	var hptopone = localStorage.getItem("hptoponec");
+	var snb = localStorage.getItem("snbb");
+	votearry.push([hptopone,snb]);
+	
+/*判断杀手与平民数量*/	
+ 	function voteb(){
+ 		var hptoponef = localStorage.getItem("hptoponec");
+ 		var snbf = localStorage.getItem("snbb");
+ 		if(hptoponef == "杀手"){
+ 			/*从数组中删除当前位置的数字*/
+ 			/*当数组长度为0时，平民获胜 否则进入下一天*/
+ 		}
+ 		if(hptoponef == "平民"){
+ 			/*玩家总数量/4*3 整数 减去 1*/
+ 			/*当杀手数组长度大于 以上 长度时 杀手获胜 否则进入下一天*/
+ 		}
+ 		
+ 		
+ 		if(hptoponef == "杀手"){
+ 		location.href = "js_task2.2.html";
+ 	}else{
+ 		location.href = "gameflow.html";
+ 	};
+ 	}
+ 	
+
+/*存储玩家数据*/ 	
+    var TotalNuma = localStorage.getItem("TotalArrStr");
+	var TotalArrStra = parseInt(TotalNuma);
+	var killstr = localStorage.getItem("KillerArrStra");
+	for(var i = 0; i < TotalArrStra; i++) {
+		var box = "<div class='shop l'><div class='content' ><div class='hptopone' >平民</div><div class='snb '>" + (i + 1) + "号" + "</div></div><div class='option' ><div class='iconfont icon-dao_cutter'></div></div></div>";
+		$(".vote").append(box);
+	}
+
+	for(var i = 0; i < killstr.length; i++) {
+		var killstra = killstr[i];
+		$(".hptopone").eq(killstra).text("杀手");
+	}
+
+/*存储死亡玩家*/
+	var snb = localStorage.getItem("snba");
+	$(".hptopone").eq(snb[0]-1).css("background-color", "#83b09a");
+</script>

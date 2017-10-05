@@ -1,0 +1,92 @@
+/*主体第二部分*/
+.how-learn{
+	margin-bottom: 150px;
+	text-align: center;
+}
+.first-row{
+	overflow:hidden;
+	margin-bottom: 100px;
+}
+.hl-p{
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+/*主体第二部分第一排*/
+.first-list{
+        display: flex;
+        align-items: center;
+	float: left;
+	width: 25%;
+}
+.serail{
+	display:inline-block;
+	color: #1FB176;
+	font-size: 18px;
+	line-height: 70px;
+	border-radius: 50%;
+	border: solid 1px #CCCCCC;
+	height: 70px;
+	width: 70px;
+}
+.pardic{
+	padding:0 13px;
+	display:inline-block;
+	text-align: left;
+	width: 64%;
+}
+.icon-jiantou{
+	display:inline-block;
+	color: #1FB176;
+}
+@media only screen and (max-width: 767px) {
+	.first-row{
+		margin-bottom: 0;
+	}
+	.first-list {
+		 color: #a1a1a1;
+		justify-content: left;
+		float: none;
+		width: 80%;
+		margin: 0 auto 25px;
+	}
+	
+	
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+	.first-row{
+             width: 80%;
+	     margin: 3rem auto;
+	}
+	.first-list{
+	     margin-left: 1rem;
+	     margin-bottom: 3rem; 
+	     width: 47%;
+	}
+	 .pardic{
+	     padding: 0;
+	     width: 14rem;
+	     margin-left: 3vw;
+	 }
+	.pardic{
+		padding-top: 7px;
+		margin-left: 10px;
+	    width: 70%;
+	}
+	.icon-jiantou {
+		margin-right: 0;
+		padding-top: 0;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+	.pardic{
+		padding-top: 7px;
+		margin-left: 10px;
+	    width: 70%;
+	}
+	.icon-jiantou {
+		margin-right: 0;
+		padding-top: 0;
+	}
+}
+

@@ -1,0 +1,60 @@
+
+/*友情链接*/
+.blogroll{
+	background-color: white;
+	text-align: center;
+	margin-top: 140px;
+}
+.blogroll-p{
+	font-weight: bold;
+	font-size: 20px;
+}
+.blogroll ul{
+	overflow: hidden;
+	padding: 8px 0 ;
+	margin: 5px auto;
+	width: 65%;
+}
+.blogroll li{
+	color: #8C8C8C;
+	font: "微软雅黑";
+	font-size: 14px;
+	margin-right: 5.3%;
+	float: left;
+}
+.blogroll li:hover{
+	text-decoration: underline;
+}
+@media only screen and (max-width: 1024px) {
+	.blogroll{
+		overflow: hidden;
+	}
+	.blogroll ul{
+		padding-left: 22%;
+		float: left;
+		width: 45%;
+	}
+	.blogroll li{
+		margin-left: 2rem;
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.blogroll li{
+	     color: #8C8C8C;
+	     font: "微软雅黑";
+	     font-size: 14px;
+	     width: 13%;
+	     padding: 8px auto;
+	     float: left;
+}
+  .blogroll ul{
+  	padding-left: 8%;
+  }
+}
+@media only screen and (min-width:1440px ) {
+	.blogroll li{
+		margin-right: 0;
+		width: 10%;
+	}
+}
+

@@ -1,0 +1,42 @@
+.centerright{
+	color: #8C8C8C;
+	box-shadow: 2px 2px 2px #CCCCCC;
+	border: solid 1px #CCCCCC;
+}
+.brief{
+	padding: 10px;
+	display: flex;
+	line-height: 20px;
+	border-bottom: solid 1px #CCCCCC;
+}
+.brief-logo{
+	margin: 0 1rem;
+	width: 17%;
+	background: url(img/战略合作企业1_03.jpg) left no-repeat;
+	background-size: 100%;
+}
+.bridf-bridf{
+	flex: 1;
+	text-indent: 2em;
+	width: 62%;
+}
+.detail{
+	line-height: 20px;
+	text-indent: 2rem;
+	width: 80%;
+	margin: 30px auto 20px;
+}
+@media only screen and (min-width: 320px) and (max-width:768px){
+	.brief{
+		display: block;
+	}
+	.brief-logo{
+		width: 200px;
+		margin: 5px auto;
+		height: 80px;
+	}
+	.bridf-bridf{
+		margin:  0 auto;
+		width: 85%;
+	}
+}

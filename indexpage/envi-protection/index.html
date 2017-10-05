@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="layui/layui.all.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="main ">
+				<a class="logo" href="">环保在身边！</a>
+				<div class="nav">
+					<!--start 登陆和非登陆需要做判断  if1-->
+					<a href="user.html"><img src="img/168.jpg"><span>名字啊</span></a>
+					<span><a href="login.html">退出</a></span>
+					<!--start 登陆和非登陆需要做判断  if2-->
+					<span>
+						<a href="">登陆</a>
+						<a href="login.html">注册</a>
+						<!--轻跳转至登陆、注册-->
+					</span>
+					<!--end 登陆和非登陆需要做判断-->
+				</div>
+			</div>
+		</div>
+		<!--header 可作为公共块-->
+		<div class="main">
+			<div class="layui-main layui-clear">
+				<div class="wrap">
+					<div class="content layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+						<!--start 分类-->
+						<div style="margin-bottom: 15px;">
+							<div>
+								<ul class="layui-tab-title layui-inline">
+									<li class="layui-this">文章分类1</li>
+									<li>文章分类2</li>
+									<li>文章分类3</li>
+									<li>文章分类4</li>
+								</ul>
+								<!--						  <div class="layui-tab-content"></div>-->
+								<form class="search">
+									<i class="layui-icon">&#xe615;</i>
+									<input class="layui-input" type="text" autocomplete="off" name="search" placeholder="搜索内容，回车跳转" />
+								</form>
+								<a href="edit.html" class="layui-btn jie-add">发布问题</a>
+								<!--请跳转到发布问题-->
+							</div>
+
+						</div>
+						<!--end 分类 -->
+						<div class="fly-panel layui-tab-content">
+							<div class="layui-tab-item layui-show">
+								<!--以下第一个展示-->
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+								<li>
+									<a class="fly-list-avatar" href=""><img src="img/168.jpg" alt=""></a>
+									<h2><a href="doc.html">长长的标题,真的是长长的标题啊！</a></h2>
+									<p class="info">
+										<span>名字</span>
+										<span>时间</span>
+										<span>可由可无</span>
+										<span class="edit-click">
+									<span><i class="layui-icon">&#xe63a;</i>666</span>
+										<span><i class="hui hui-unie60b"></i>555</span>
+										</span>
+									</p>
+								</li>
+							</div>
+							<div class="layui-tab-item">内容2</div>
+							<div class="layui-tab-item">内容3</div>
+							<div class="layui-tab-item">内容4</div>
+						</div>
+						<!--<div>
+					</div> 或许要做个导航？-->
+					</div>
+				</div>
+				<aside>
+					<div class="fly-panel">
+						<h2>最多评论</h2>
+						<ul>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<!--后台最好遍历前十个热门帖就好？-->
+						</ul>
+					</div>
+					<div class="fly-panel">
+						<h2>最多评论</h2>
+						<ul>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<li>
+								<a href="">说点什么好呢？要长点的吧？对吧？对吧？对吧？</a>
+								<span><i class="layui-icon">&#xe63a;</i>666</span>
+							</li>
+							<!--后台最好遍历前十个热门帖就好？-->
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</div>
+		
+		<footer>
+			<p><span>项目名字</span><span>2017</span></p>
+			<p><span>开发者名字</span></p>
+		</footer>
+	</body>
+
+	<script type="text/javascript">
+		layui.use('element', function() {
+			var $ = layui.jquery,
+				element = layui.element(); //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+		});
+	</script>
+
+</html>

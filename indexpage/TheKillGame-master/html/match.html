@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>玩家配比</title>
+		<script type="text/javascript" src="../js/task2.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/js_task2-reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/js_task2-common.css" />
+		<link rel="stylesheet" href="../font7/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/match.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+
+	</head>
+
+	<body>
+		<header class="fiexdt centerw">
+			<a class="iconfont icon-xiangzuo" href="index_kill.html"></a>
+			参数设置
+			<div class="iconfont icon-tips"></div>
+		</header>
+		<main>
+			<div class="match_p">
+				<div class="match_p1">
+					玩家配比
+				</div>
+				<div class="match_p2">
+					<div class="match_p2t"></div>
+					<div class="match_p2d">
+						<button onclick="match()">点击设置</button>
+						<img src="../images/设置页面_03.png" />
+					</div>
+				</div>
+			</div>
+			<div class="word">
+				<div>水民词组</div>
+				<div>幽灵词组</div>
+			</div>
+			<div class="player_nb">
+				<form>玩家人数
+					<input class="player_nb1" type="text" id="txt_checkingPhone" name="volume" min="4" max="18" value="6" onchange="abf()" />
+					<p>(玩家数量为4&nbsp;-&nbsp;18)</p>
+					<div class="sliding">
+						<button type="button" class="minus l" onclick="adda()">-</button>
+						<input class="sliding_1" type="range" min="4" max="18" id="range" value="6" onchange="yanse()"/>
+						<button type="button" class="puls r" onclick="puls()">+</button>
+					</div>
+				</form>
+			</div>
+			<button class="deal" onclick="start()">去发牌</button>
+		</main>
+	</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	localStorage.clear();
+	function abf() {
+		var player = $(".player_nb1").val();
+		$("#range").val(parseInt(player));
+		yanse();
+	}
+	
+	
+	function adda() {
+		var adda = parseInt($("#range").val());
+		$("#range").val(adda - 1);
+		$(".player_nb1").val(adda);
+		if(adda === 4 ) {
+		alert("已达到玩家数量下限");
+	}
+	}
+
+	function puls() {
+		var adda = parseInt($("#range").val());
+		$("#range").val(adda +1);
+		$(".player_nb1").val(adda);
+		if(adda === 18 ) {
+		alert("已达到玩家数量上限");
+	}
+	}
+	
+	function yanse(){
+		var adda = parseInt($("#range").val()) - 4;
+ 		$(".sliding_1").css('background', 'linear-gradient(to right, #FFA500, #ffe88d ' + adda*15 + '%, #ffd280)');
+ 	}
+</script>
+
+<script type="text/javascript">
+	(function() {
+		var range = document.getElementById("range");
+		volume = document.forms[0]["volume"]; //第一次使用这种方式获取document.forms[index][formName];
+
+		//设置初值
+
+		if(range.addEventListener) {
+			range.addEventListener("change", function() {
+				volume.value = range.value;
+			});
+		} else {
+			range.attachEvent("change", function() {
+				volume.value = range.value;
+			})
+		}
+	})();
+</script>

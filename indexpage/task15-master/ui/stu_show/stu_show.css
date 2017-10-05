@@ -1,0 +1,109 @@
+/*主体第三部分*/
+
+.students {
+	overflow: hidden;
+	text-align: center;
+}
+
+.students-head {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 70px;
+}
+
+.students-show {
+	max-height: 117rem;
+}
+
+.showpart {
+	box-sizing: border-box;
+	float: left;
+	padding: 0 15px;
+	width: 25%
+}
+
+.show-part {
+	margin-bottom: 20px;
+	padding: 20px 30px 40px;
+	background-color: white;
+	box-shadow: 2px 2px 9px #C0C0C0;
+	border: solid 1px #C0C0C0;
+	float: left;
+}
+
+.bgimg,
+.bgimg-one,
+.bgimg-two,
+.bgimg-three {
+	margin: 0 auto;
+	height: 110px;
+	width: 110px;
+	background: url(img/技能树首页_10.jpg) left no-repeat;
+	background-size: 100%;
+}
+
+.show-p1 {
+	margin: 30px 0 20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.show-p2 {
+	font-size: 16px;
+	color: #C0C0C0;
+	line-height: 1.5;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+.bgimg-one {
+	background: url(img/技能树首页_03.jpg) left no-repeat;
+	background-size: 100%;
+}
+
+.bgimg-two {
+	background: url(img/技能树首页_05.jpg) left no-repeat;
+	background-size: 100%;
+}
+
+.bgimg-three {
+	background: url(img/技能树首页_07.jpg) left no-repeat;
+	background-size: 100%;
+}
+
+
+/*尾部四个小点*/
+
+.btpart {
+	width: 6rem;
+	height: 20px;
+	margin: 20px auto 0;
+}
+
+.btpart div {
+	margin: 0.2rem 0.3rem 0 0.4rem;
+	float: left;
+	height: 0.8rem;
+	width: 0.8rem;
+	border-radius: 50%;
+	background-color: #DCDCDC;
+}
+
+.btpart div:hover {
+	background-color: #1FB176;
+}
+
+@media only screen and (max-width: 768px) {
+	.showpart {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 425px) and (max-width: 1153px) {
+	.showpart {
+		float: left;
+		width: 50%;
+	}
+}

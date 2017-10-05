@@ -1,0 +1,153 @@
+
+ .container {
+ 	margin: 0 auto;
+	max-width: 1000px;
+}
+a:hover{
+	text-decoration: none;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+/*导航条*/
+header{
+	width: 100%;
+}
+.navbar-leader{
+	padding: 0 15px;
+	overflow: hidden;
+}
+.navbar-default {
+	border-color: #e7e7e7;
+	background-color: #F8F8F8;
+	min-height: 60px;
+	padding-top: 5px;
+}  
+
+.navbar-brand {
+	font-family: "Microsoft YaHei", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #2f2e2e;
+	letter-spacing: 5px;
+}
+.navbar-brand {
+	float: left;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px
+}
+
+.navbar-default .navbar-brand img {
+	height: 30px;
+	margin-top: -6px;
+	display: inline;
+	vertical-align: middle;
+}
+.navbar-c{
+	float: right;
+}
+.navbar-c>li{
+	padding: 15px;
+	float: left;
+	list-style: none;
+}
+
+.navbar-c>li>a {
+	
+	font-size: 14px;
+	color: #000000;
+}
+
+.navbar-c>li>a:hover {
+	color: orange;
+}
+.fa-list-ul{
+	font-size: 26px;
+	height: 37px;
+	width: 48px;
+	margin: 8px 0;
+	display: inline-block;
+	float: right;
+	border: none;
+	outline: none;
+	background-color: #F8F8F8;
+}
+.fa-list-ul:hover{
+	border-radius: 5px;
+	background-color: #DDDDDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #2f2e2e;
+}
+
+.navbar-collapse {
+	overflow: hidden;
+}
+
+/*颈部*/
+header{
+	overflow: hidden;
+	background: url(../img/header-bg.jpg) center top no-repeat;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.card{
+	box-sizing: border-box;
+	width: 360px;
+	height: 465px;
+	margin: 300px auto;
+	background-color: #fff;
+	padding: 70px 60px;
+}
+
+.card-p{
+	margin-top: 0;
+	margin-bottom: 40px;
+	font-family: "Arial black", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 90px;
+	line-height: 1;
+	font-weight: bold;
+	text-align: left;
+}
+
+.card a {
+	text-align: center;
+	display: block;
+	color: #2f2e2e;
+}
+
+.fa-angle-down{
+	font-size: 80px;
+	line-height: 0.5;
+}
+
+.card:hover [class*=fa] {
+	-webkit-transform: scale(1.3);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.title h4 {
+	font-family: "Microsoft YaHei", "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-indent: 6px;
+	color: #2f2e2e;
+}
+
+.title div {
+	height: 3px;
+	width: 40px;
+	background-color: #f7931d;
+	margin: 20px auto 35px auto;
+}
+

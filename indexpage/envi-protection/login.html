@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册/登陆</title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="layui/layui.all.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="layui-main-wrap layui-clear">
+				<div class="fly-panel">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+						<ul class="layui-tab-title">
+							<li class="layui-this">登陆</li>
+							<li>注册</li>
+						</ul>
+						<div class="layui-tab-content" style="padding: 20px 0;">
+							<div class="layui-tab-item layui-show">
+								<form class="layui-form layui-form-pane" action="">
+									<div class="layui-form-item">
+										<label class="layui-form-label">用户名</label>
+										<div class="layui-input-inline">
+											<input type="text" name="password" placeholder="请输入用户名" class="layui-input" value="admin">
+										</div>
+										<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">密码</label>
+										<div class="layui-input-inline">
+											<input type="password" name="password" placeholder="请输入旧密码" class="layui-input" value="123456">
+										</div>
+										<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+									</div>
+									<button class="layui-btn  layui-btn-big"><a href="index.html">提交修改</a></button>
+								</form>
+							</div>
+							<div class="layui-tab-item">
+								<form class="layui-form layui-form-pane" action="">
+									<div class="layui-form-item">
+										<label class="layui-form-label">用户名</label>
+										<div class="layui-input-inline">
+											<input type="password" name="password" placeholder="请输入用户名" class="layui-input">
+										</div>
+										<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">密码</label>
+										<div class="layui-input-inline">
+											<input type="password" name="password1" placeholder="请输入新密码" class="layui-input">
+										</div>
+										<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">昵称</label>
+										<div class="layui-input-inline">
+											<input type="password" name="password" placeholder="请输入昵称" class="layui-input">
+										</div>
+										<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">邮箱</label>
+										<div class="layui-input-inline">
+											<input type="password" name="password" placeholder="请输入邮箱" class="layui-input">
+										</div>
+										<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">头像</label>
+										<div class="layui-input-inline">
+											<input type="file" name="file" class="layui-upload-file" lay-title="添加一个碉堡了的图片">
+										</div>
+										<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+									</div>
+									<button class="layui-btn  layui-btn-big">确认修改</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+<script>
+		layui.use('upload', function() {
+			layui.upload({
+				url: '' //上传接口
+					,
+				success: function(res) { //上传成功后的回调
+					console.log(res)
+				}
+			});
+		});
+		
+</script>
+</html>

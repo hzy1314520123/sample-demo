@@ -1,0 +1,67 @@
+*主体第四部分*/
+.stratagy{
+	height: 265px;
+}
+.stratagy-p{
+	text-align:center;
+	height: 20px;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.stratagy-img{
+	margin-top: 60px;
+	height: 178px;
+	background-color: white;
+}
+.stratagy-img:hover{
+	box-shadow: 0px 0px 1px #C0C0C0;
+}
+.stratagy-img div{
+	float: left;
+	height: 178px;
+	width: 20%;
+}
+.stratagy-img div:hover{
+	border: solid 1px #C0C0C0;
+	box-shadow: 0px 0px 9px #C0C0C0;
+
+}
+.stratagy-one{
+	background: url(img/技能树首页_17.jpg) center no-repeat;
+}
+.stratagy-two{
+	background: url(img/技能树首页_19.jpg) center no-repeat;
+}
+.stratagy-three{
+	background: url(img/技能树首页_21.jpg) center no-repeat;
+}
+.stratagy-four{
+	background: url(img/技能树首页_23.jpg) center no-repeat;
+}
+.stratagy-five{
+	background: url(img/技能树首页_25.jpg) center no-repeat;
+}
+@media only screen and (max-width: 768px){
+	.stratagy{
+		height: 81rem;
+		margin-top: 12rem;
+	}
+	.stratagy-p{
+		font-size: 1.8rem;
+	}
+	.stratagy-img{
+		border:none;
+		height: 81rem;
+		background:none;
+	}
+	.stratagy-img div{
+		box-shadow: 2px 2px 2px #CCCCCC;
+		background-color: white;
+		width: 80%;
+		margin: 18px auto;
+		float: none;
+	}
+}
+
+
+

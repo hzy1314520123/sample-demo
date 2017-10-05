@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人</title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/user.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="layui/layui.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="main ">
+				<a class="logo" href="">环保在身边！</a>
+				<div class="nav">
+					<!--start 登陆和非登陆需要做判断  if1-->
+					<a href="user.html"><img src="img/168.jpg"><span>名字啊</span></a>
+					<span><a href="login.html">退出</a></span>
+					<!--start 登陆和非登陆需要做判断  if2-->
+					<span>
+						<a href="">登陆</a>
+						<a href="login.html">注册</a>
+						<!--轻跳转至登陆、注册-->
+					</span>
+					<!--end 登陆和非登陆需要做判断-->
+				</div>
+			</div>
+		</div>
+		<!--header 可作为公共块-->
+		<div class="main">
+			<div class="layui-main layui-clear">
+				<div class="layui-tab">
+					<ul class="layui-nav layui-nav-tree layui-tab-title" lay-filter="user">
+						<li class="layui-nav-item layui-this"><a href="javascript:;"><i class="layui-icon" style="font-size: 18px;margin-right: 10px;">&#xe612;</i>用户中心</a></li>
+						<li class="layui-nav-item"><a href="javascript:;"><i class="layui-icon" style="font-size: 20px;margin-right: 10px;">&#xe620;</i>基本设置</a></li>
+						<li class="layui-nav-item"><a href="javascript:;">社区</a></li>
+					</ul>
+					<div class="layui-tab-content fly-panel-user">
+						<div class="layui-tab-item layui-show">
+							<p><span>我的发帖</span></p>
+							<ul>
+								<li class="LAY_modal"><a href="">我要写的长长的~~~！！！！</a><i>2017/03/21</i><a href="javascript:;" class="mine-edit">编辑</a><a href="javascript:;" class="mine-del" data-method="notice">删除</a><em>5评论/6点赞</em></li>
+							</ul>
+						</div>
+						<div class="layui-tab-item">
+							<p><span>我的资料</span></p>
+							<form class="layui-form layui-form-pane" action="" style="padding: 20px 0;">
+								<div class="layui-form-item">
+									<label class="layui-form-label">用户名</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password" placeholder="请输入用户名" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">旧密码</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password" placeholder="请输入旧密码" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">新密码</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password1" placeholder="请输入新密码" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">确认密码</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password2" placeholder="确认密码" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">昵称</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password" placeholder="请输入昵称" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">邮箱</label>
+									<div class="layui-input-inline">
+										<input type="password" name="password" placeholder="请输入邮箱" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">头像</label>
+									<div class="layui-input-inline">
+										<input type="file" name="file" class="layui-upload-file" lay-title="添加一个碉堡了的图片">
+									</div>
+									<div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+								</div>
+								<button class="layui-btn">确认修改</button>
+							</form>
+						</div>
+						<div class="layui-tab-item">内容3</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p><span>项目名字</span><span>2017</span></p>
+			<p><span>开发者名字</span></p>
+		</footer>
+	</body>
+	<script>
+		layui.use('element', function() {
+			var element = layui.element(); //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+		});
+		
+		layui.use('upload', function() {
+			layui.upload({
+				url: '' //上传接口
+					,
+				success: function(res) { //上传成功后的回调
+					console.log(res)
+				}
+			});
+		});
+		
+		layui.use('layer', function(){ //独立版的layer无需执行这一句
+  var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+  
+  //触发事件
+  var active = {
+    notice: function(){
+      //示范一个公告层
+      layer.open({
+        type: 1
+        ,title: false //不显示标题栏
+        ,closeBtn: true
+        ,area: '300px;'
+        ,shade: 0.8
+        ,class: 'mine-del' //设定一个class，防止重复弹出
+        ,btn: ['确定', '取消']
+        ,moveType: 1 //拖拽模式，0或者1
+        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">确认删除文章？</div>'
+        ,success: function(layero){
+        	
+          var btn = layero.find('.layui-layer-btn');
+          btn.css('text-align', 'center');
+          btn.find('.layui-layer-btn0').attr({
+            href: 'user.html'
+            //或许你需要修改地址
+            ,target: '_self'
+          });
+
+        }
+      });
+    }
+  };
+  
+  $('.LAY_modal .mine-del').on('click', function(){
+    var othis = $(this), method = othis.data('method');
+    active[method] ? active[method].call(this, othis) : '';
+  });
+  
+});
+	</script>
+
+</html>

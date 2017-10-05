@@ -1,0 +1,97 @@
+/*主体第一部分*/
+/* 第一部分 左边*/
+.connection{
+	overflow:hidden;
+	padding:0 15px;
+	margin-bottom: 140px;
+}
+.conne-one{
+	padding-top: 1rem;
+	text-align: center;
+	width: 75%;
+	float: left;
+}
+.conne-one div{
+	box-sizing: border-box;
+	padding:0 32px;
+	width: 33.33%;
+	float: left;
+}
+
+.conne-p2{
+        display: inline-block;
+        margin: 18px 28px 28px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.conne-p3{
+	font-size:16px;
+	text-align: center;
+	color: #C0C0C0;
+}
+.conne-one a{
+	display:block;
+	font-size:60px ;
+	color: #1FB176;
+}
+/*主体第一部分右边*/
+.conne-two{
+	box-sizing: border-box;
+	border-left: dashed 2px #DCDCDC;
+	padding-left: 56px;
+	padding-top: 20px;
+	width: 25%;
+	float: right;
+}
+.studynb{
+	margin:30px 0 40px;
+}
+.conne-two a{
+	color: #1FB176;
+}
+.conne-p4{
+	margin-top:15px;
+	color: #C0C0C0;
+	font-size: 16px;
+}
+@media only screen and (max-width: 1024px) {
+	main {
+		width: 100%;
+		margin:0 ;
+	}
+	.conne-one  p{
+		padding: 0;
+	}
+	
+	.conne-one{
+		border-right: none;
+		width: 100%;
+		float: none;
+	}
+	.conne-two{
+		padding-left: 0;
+		float: none;
+	}
+	.conne-one div{
+		margin-top:20px;
+		float: none;
+		margin: 0 auto;
+		width: 65%;
+	}
+	.conne-two{
+		border-left: none;
+		border-top: dashed 2px #DCDCDC;
+		text-align: center;
+		margin: 0 auto;
+		width: 80%;
+	}
+}
+@media only screen and (min-width: 1025px) {
+     .conne-one a{
+                padding: 0;
+	}
+     .connection{
+     	height: 270px;
+     }
+}
+

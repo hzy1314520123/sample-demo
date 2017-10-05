@@ -1,0 +1,83 @@
+main{
+	padding: 70px 0 ;
+	background-color: #2BBDE0;
+}
+
+header{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	background-color:#2BBDE0;
+	border-bottom: solid 1px white;
+}
+header a{
+	color: white;
+}
+main{
+	text-align: center;
+}
+.icon-tips{
+	margin-right: 10px;
+	float: right;
+	display: inline-block;
+	font-size: 28px;
+}
+.icon-xiangzuo{
+	margin-left: 10px;
+	display: inline-block;
+	float: left;
+	font-size: 28px;
+}
+
+.content{
+	font-size: 16px;
+    color: #2BBDE0;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 4px;
+    margin: 20px auto;
+    width: 75%;
+    height: 360px;
+    background-color: #ffedc5;
+    border: solid 4px white;
+}
+.content img{
+	width: 55%;
+	margin-top: 50px;
+}
+.circle{
+	position: absolute;
+    top: -22px;
+    left: 44%;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 35px;
+    color: #f56b81;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: white;
+    border: solid 3px #FFEDC5;
+}
+
+.footer_1 button{
+	display: block;
+    margin: 30px auto 0;
+    height: 50px;
+    width: 78%;
+    color: white;
+    border-radius: 5px;
+    line-height: 48px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #fbb438;
+}
+@media  screen and (min-width: 550px) {
+	.content,.footer_1 button{
+		width: 60%;
+	}
+}

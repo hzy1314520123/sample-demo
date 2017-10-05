@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/js_task2-reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/js_task2-common.css" />
+		<link rel="stylesheet" href="../font7/iconfont.css" />
+		<link rel="stylesheet" href="../css/gameflow.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	</head>
+
+	<body class="centerw">
+		<div class="bg-model centerw">
+			<div class='content'>
+				<div class="content_p">请死者亮明身份并且发表遗言</div>
+				<div class="content_d">
+					<div class="b_l">取消</div>
+					<div class="b_r">确认</div>
+				</div>
+			</div>
+		</div>
+		<header class=" nav centerw fiexdt ">
+			<audio src="../audio/财富自由.mp3" autoplay="autoplay"></audio>
+			<a class="iconfont icon-xiangzuo l" href="diary.html"></a>
+			<p>法官台本</p>
+			<a class="iconfont icon-cha r" onclick="backa()"></a>
+		</header>
+		<main class="content-part">
+			<div class="date_nb">
+				<div class="date_nb1">
+					第一天
+				</div>
+				<span class="iconfont icon-xiangshang gf_one"></span>
+				<div class="gameflow gf_one">
+					<div class="gameflow1">
+						<div class="killer killmen killer_dayone">
+							<img src="../images/流程_03.png" />
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p onclick="killing()">杀手杀人</p>
+						</div>
+						<div class="kill_ident kill_dayone">
+							<span>3号被投票投死了，真事身份是平民</span>
+						</div>
+						<div class="killer" id="last_word" onclick="last_word()">
+							<img src="../images/流程_06.png" />
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p>亡灵发表遗言</p>
+						</div>
+
+						<div class="killer" id="state" onclick="state()">
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p>玩家依次发言</p>
+						</div>
+
+						<div class="killer voter_dayone">
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p onclick="vote()">全民投票</p>
+						</div>
+
+						<div class="vote_ident vote_dayone">
+							<span>3号被投票投死了，真事身份是平民</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="date_nb day2">
+				<div class="date_nb1">
+					第二天
+				</div>
+				<span class="iconfont icon-xiangshang"></span>
+				<div class="gameflow">
+					<div class="gameflow1">
+						<div class="killer killmen killer_daytwo">
+							<img src="../images/流程_03.png" />
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p onclick="killing2()">杀手杀人</p>
+						</div>
+						<div class="kill_ident kill_daytwo">
+							<span>3号被投票投死了，真事身份是平民</span>
+						</div>
+						<div class="killer" id="last_word" onclick="last_word()">
+							<img src="../images/流程_06.png" />
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p>亡灵发表遗言</p>
+						</div>
+
+						<div class="killer" id="state" onclick="state()">
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p>玩家依次发言</p>
+						</div>
+
+						<div class="killer voter voter_daytwo">
+							<span class="iconfont icon-xiangzuo1"></span>
+							<p onclick="vote()">全民投票</p>
+						</div>
+
+						<div class="vote_ident vote_daytwo">
+							<span>3号被投票投死了，真事身份是平民</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="footerbg  centerw fiexdb"></div>
+		<footer class="centerw fiexdb">
+			<div class="againone l">
+				<a onclick="wanshan()">结束游戏</a>
+			</div>
+			<div class="uloading r" onclick="rizhi()">法官日志</div>
+		</footer>
+	</body>
+
+</html>
+<script type="text/javascript">
+	function backa() {
+		var r = confirm("是否结束本轮游戏？");
+		if(r === true) {
+			window.location ="index_kill.html";
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function rizhi() {
+		window.location.href = "diary.html";
+	}
+
+	function wanshan() {
+		var r = confirm("功能完善中...");
+		if(r === true) {
+			window.location ="index_kill.html";
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function killing() {
+		window.location.href = "killer.html";
+	}
+
+	function killing2() {
+		window.location.href = "killer.html";
+	}
+
+	var hptopone = localStorage.getItem("hptoponeb");
+	var snb = localStorage.getItem("snba");
+	if(hptopone != null || snb != null) {
+		$(".kill_dayone").css("display", "block");
+		$(".kill_dayone").text(snb + "被杀手杀死，真实身份是" + hptopone);
+		$(".killer_dayone p").css("background-color", "#83b09a");
+		$(".killer_dayone span").css("color", "#83b09a");
+	}
+	var hptoponeg = localStorage.getItem("hptoponeb");
+	var snbg = localStorage.getItem("snba");
+	if(hptoponeg != null || snbg != null) {
+		$(".kill_daytwo").css("display", "block");
+		$(".kill_daytwo").text(snbg + "被杀手杀死，真实身份是" + hptoponeg);
+		$(".killer_daytwo p").css("background-color", "#83b09a");
+		$(".killer_daytwo span").css("color", "#83b09a");
+	}
+
+	var flag = true;
+	var last_word = function() {
+		flag = !flag;
+		if(flag) {
+			alert("请进行游戏下一项活动");
+			return;
+		} else {
+			$(".bg-model").fadeTo(300, 1);
+			$(".b_l").click(function() {
+				$(".bg-model").hide(300);
+			});
+			$(".b_r").click(function() {
+				$(".bg-model").hide(300);
+				$("#last_word p").css("background-color", "#83b09a");
+				$("#last_word span").css("color", "#83b09a");
+			});
+		}
+
+	}
+	var flaga = true;
+	var state = function() {
+		flaga = !flaga;
+		if(flaga) {
+			alert("请进行游戏下一项活动");
+			return;
+		} else {
+			$(".bg-model").fadeTo(300, 1);
+			$(".b_l").click(function() {
+				$(".bg-model").hide(300);
+			});
+			$(".b_r").click(function() {
+				$(".bg-model").hide(300);
+				$("#state p").css("background-color", "#83b09a");
+				$("#state span").css("color", "#83b09a");
+			});
+		}
+	}
+
+	function vote() {
+		window.location.href = "vote.html";
+	}
+	var hptoponed = localStorage.getItem("hptoponec");
+	var snbd = localStorage.getItem("snbb");
+	if(hptoponed != null || snbd != null) {
+		$(".vote_dayone").css("display", "block");
+		$(".vote_dayone").text(snbd + "被投票死了，真实身份是" + hptoponed);
+		$(".voter_dayone p").css("background-color", "#83b09a");
+		$(".voter_dayone span").css("color", "#83b09a");
+	}
+	var hptoponef = localStorage.getItem("hptoponec");
+	var snbf = localStorage.getItem("snbb");
+	if(hptoponef != null || snbf != null) {
+		$(".vote_daytwo").css("display", "block");
+		$(".vote_daytwo").text(snbf + "被投票死了，真实身份是" + hptoponef);
+		$(".voter_daytwo p").css("background-color", "#83b09a");
+		$(".voter_daytwo span").css("color", "#83b09a");
+	}
+
+	if(hptoponed == "平民") {
+		$(".day2").css("display", "block");
+		$(".gf_one").css("display", "none");
+	}
+
+	$(".date_nb1").click(function() {
+		var dayup = $(".date_nb1").index(this);
+		$(".gameflow").eq(dayup).slideToggle("slow");
+		$(".icon-xiangshang").eq(dayup).slideToggle("slow");
+	});
+	
+</script>

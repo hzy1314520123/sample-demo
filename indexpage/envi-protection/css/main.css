@@ -1,0 +1,140 @@
+body{
+	margin-top: 80px;
+	background-color: #F1F1F1;
+}
+body>.main{
+	margin-bottom: 15px;
+}
+.header{
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #393D49;
+}
+.logo{
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 135px;
+    height: 37px;
+    text-indent: -666px;
+    background: url(../img/huanbao.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+.nav{
+	position: absolute;
+	top: 12px;
+    right: 0;
+}
+.nav>span{
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+}
+.nav>a>img{
+	display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.nav a{
+	display: inline-block;
+    padding: 0 10px;
+    color: #A9B7B7;
+}
+.nav a:hover{
+	    color: #fff;
+}
+/*头部结束*/
+.content{
+	position: relative;
+    margin-right: 347px;
+}
+/*内容结束*/
+aside{
+    position: relative;
+    float: left;
+    top: 0;
+    width: 336px;
+    margin-left: -336px;
+}
+aside h2{
+    position: relative;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #E9E9E9;
+    color: #333;
+    border-radius: 2px 2px 0 0;
+    font-size: 14px;
+}
+aside li{
+	margin: 0 15px;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+aside a{
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+	max-width: 72%;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+aside span{
+	color: #999;
+	font-size: 12px;
+}
+aside i{
+	padding-right: 5px;
+}
+/*end 侧边栏*/
+footer{
+    margin: 50px 0 0;
+    padding: 20px 0 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #737573;
+    border-top: 1px solid #e2e2e2;
+    clear: both;
+}
+/*end 尾部*/
+/*start 组件*/
+.about{
+	position: relative;
+	height: 46px;
+    margin: 5px 0;
+    clear: both;
+}
+.about img{
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 0;
+    top: 0;
+    border-radius: 2px;
+}
+.about>cite{
+    position: absolute;
+	bottom: 27px;
+    left: 61px;
+    color: #4f99cf;
+    font-size: 14px;
+    font-style: normal;
+}
+.about>span{
+    position: absolute;
+    left: 61px;
+    bottom: 3px;
+}
