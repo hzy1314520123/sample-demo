@@ -1,0 +1,49 @@
+.center{
+	text-align: center;
+}
+.comment-con-list{
+	padding: 10px 15px;
+}
+.newblog p{
+	margin:  0 40px 0 0;
+	padding: 10px 0 ;
+}
+.box-c{
+	border: 1px dashed #ccc;
+}
+p{
+	clear: both;
+}
+ul.infos p img{
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 10px 55px;
+}
+.bt-cs{
+	padding: 5px 10px;
+	background: #63b120;
+	border-radius: 5px;
+}
+.bt-cs a:link,.bt-bule a:link{
+	color: #fff;
+}
+.bt-cs a:visited,.bt-bule a:visited{
+	color: #fff;
+}
+.bt-bule{
+	width: 100px;
+	text-align: center;
+	padding: 5px 10px 5px 30px;
+	border-radius: 5px;
+	background: url(../img/5817.png)no-repeat 20px center #47a9ff;
+}
+.comment-con{
+	border-top: 1px solid #ccc;
+	clear: both;
+}
+.comment-con-list span,.comment-con-list a{
+	font-size: 12px;
+	line-height: 22px;
+}
+

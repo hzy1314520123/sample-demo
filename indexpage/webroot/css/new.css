@@ -1,0 +1,127 @@
+.newblog{
+	width: 740px;
+	overflow: hidden;
+	background: url(../img/line.jpg) repeat-y right;
+	margin: 10px 0;
+}
+.newblog h2{
+	clear: both;
+	margin: 20px 0 10px 0;
+	font-size: 15px;
+}
+.newblog h2 a{
+	color: #555;
+}
+.newblog figure img{
+	width: 160px;
+	height: 120px;
+	border: #eae6e7 1px solid;
+	padding: 4px;
+}
+.nlist{
+	line-height: 1.9;
+	float: left;
+	width: 530px;
+	margin-left: 10px
+}
+.blank{
+	height: 5px;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	clear: both;
+}
+a.readnore{
+	background: #f90;
+	color: #fff;
+	padding: 5px 10px;
+	float: right;
+	margin: 20px  0 0 0 ;
+	border-radius: 40%;
+}
+.newblog p{
+	margin: 10px;
+}
+.newblog span a{
+	color: #63b120;
+}
+.rnav{
+	width: 250px;
+	margin: 0;
+	overflow: hidden;
+	position: fixed;
+	background: #FFF;
+	z-index: 1;
+	background:url(../img/6167.png) no-repeat rgba(255,255,255,0.7);
+	background-position: 3px 22px;
+}
+.rnav li{
+	width: 120px;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	float: left;
+	height: 40px;
+	line-height: 38px;	
+}
+.rnav li a{
+	display: block;
+	color: #fff;
+	transition:all 1s;
+}
+.rnav h3{
+	padding-left: 35px;
+}
+.rnav1,.rnav2,.rnav3,.rnav4{
+	transition:All 0.6s ease-in-out;
+    -webkit-transition:All 0.6s ease-in-out;
+    -moz-transition:All 0.6s ease-in-out;
+    -o-transition:All 0.6s ease-in-out;
+}
+.rnav1{
+	background: #fe5187;
+}
+.rnav2{
+	background: #339967;
+}
+.rnav3{
+	background: #ff8151;
+}
+.rnav4{
+	background: #66cc9a;
+}
+.rnav a:hover {
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+}
+.news{
+	margin-top: 90px;
+}
+.page{
+	margin: 20px 0 0 0;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+}
+.page>b,.page a:hover{
+	background: #333;
+	color: #fff;
+}
+.page>b,.page a{
+	margin: 0 2px;
+	height: 26px;
+	line-height: 26px;
+	border-radius:50% ;
+	width: 26px;
+	text-align: center;
+	display: inline-block;
+}
+.page a{
+	color: #f33;
+	border: #999 1px solid;
+	font-family:  "宋体", Arial, Helvetica, sans-serif;
+}

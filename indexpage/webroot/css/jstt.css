@@ -1,0 +1,17 @@
+.rnav li a{
+	color: #82c5fe;
+}
+.rnav{
+	background: #fff;
+}
+.rnav li a:hover{
+	background: rgba(0,0,0,1);
+	color: #FE5187;
+	border-radius: 10px;
+}
+.nlist p{
+	font-size: 12px;
+}
+.news{
+	margin-top: 200px;
+}
