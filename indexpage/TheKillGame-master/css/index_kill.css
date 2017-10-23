@@ -18,9 +18,9 @@ body {
 /*颈部 上次游戏*/
 
 .subnav {
-	margin: 54px 0 0 0;
+	padding: 34px 0;
 	color: #8C8C8C;
-	font-size: 16px;
+	font-size: 34px;
 	line-height: 3rem;
 	text-align: center;
 	border: solid 1px #DCDCDC;
@@ -37,40 +37,51 @@ body {
 /*中间部分*/
 
 main {
-	margin: 10px 0 0 0;
-	background-color: white;
+	margin-top: 64px;
+	padding: 25px 35px;
+	background-color:#F0F0F0;
 	border: solid 1px #DCDCDC;
 }
 
 .title {
-	height: 3rem;
+	padding: 20px 0;
 	text-align: center;
-	font-size: 22px;
+	font-size: 37px;
 	color: #FAA732;
 	line-height: 3rem;
 	border-bottom: solid 1px #FAA732;
+	background-color: #FFFFFF;
 }
 
 .menu {
+	border: solid 1px #DCDCDC;
+	margin-top: 30px;
+	padding-bottom: 10px;
 	position: relative;
+	background-color: #FFFFFF;
+	
 }
 
 .title-sm a {
 	color: white;
 }
 .title-sm {
-	height: 4rem;
-	margin: 20px 3rem 0;
+	height: 135px;
+	margin: 30px 55px ;
 	text-align: center;
-	font-size: 20px;
-	line-height: 4rem;
+	font-size: 2rem;
+	line-height: 135px;
 	color: white;
 	background-color: #6dd2e9;
 }
+.title-sm button{
+	font-size: 32px;
+}
 .submenu p {
-	font-size: 14px;
+	font-size: 24px;
 	text-align: center;
-	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
 	color: #8C8C8C;
 }
 .submenu button {
@@ -81,14 +92,14 @@ main {
 }
 .icon-right {
 	position: absolute;
-	top: 41%;
+	top: 48%;
 	right: 0.5vw;
 	font-size: 2.5rem;
 	color: #FAA732;
 }
 .icon-xiangzuo1{
 	position: absolute;
-	top: 41%;
+	top: 48%;
 	left: 0.5vw;
 	font-size: 2.5rem;
 	color: #FAA732;
@@ -99,9 +110,8 @@ main {
 
 .scroll {
 	width: 6rem;
-	height: 2rem;
+	height: 1rem;
 	margin: 1vh auto;
-	padding-top: 0.5rem;
 }
 
 .scroll div {

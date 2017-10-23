@@ -1,0 +1,140 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.nav{
+	border:solid 1px #fff;
+	overflow: hidden;
+	font-size: 18px;
+	line-break: 20px;
+	background-color: #FFFFFF;
+}
+.navbar-left{
+
+	box-sizing: border-box;
+	padding: 15px 37px ;
+	height: 50px;
+	line-height: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #ea8c57;
+	font-size: 18px;
+	width: 250px;
+}
+.fa-power-off{
+	color: #F0AD4E;
+}
+.admin-a{
+	color: #8cd5ff;
+}
+.navbar-left p{
+	margin: 0;
+}
+.navbar-right{
+	margin: 0;
+}
+.navbar-right li{
+	padding: 10px;
+	font-size: 16px;
+	margin: 0 5px;
+	list-style: none;
+	float: left;
+}
+
+/*centern*/
+.siderbar{
+	float: left;
+	padding: 20px 0 3000px;
+	color: #fff;
+	background-color: #e38060;
+ 	width: 250px;
+}
+.siderbar li{
+	list-style: none;
+}
+
+.siderbar-1 a:hover{
+	background-color: orange;
+}
+.siderbar-1{
+	padding: 0;
+}
+.siderbar-1 ul{
+	text-align: center;
+	padding: 0;
+}
+.siderbar-1 a{
+	color: white;
+	text-align: left;
+	display: block;
+	padding: 10px 15px 10px 15px;
+}
+.siderbar-3 li>a{
+	text-align: center;
+}
+.fa-angle-left{
+	margin-right: 40px;
+	float: right;
+}
+.fa-pencil{
+	margin: 0 30px 0 10px;
+}
+.siderbar-5 a{
+	color: white;
+	text-align: center;
+}
+/*welcome*/
+.lei{
+	background-color: #F0F0F0;
+	padding: 30px 30px 3000px 30px;
+	float: right;
+	width: calc(100% - 250px);
+}
+.lei-1{
+	width:100%;
+	background-color: white;
+	margin-bottom: 20px;
+}
+.lei-1 form{
+	padding: 15px;
+}
+.lei-1 label{
+	text-align: center;
+}
+.lei-11,.lei-12{
+	line-height: 22px;
+	padding: 10px;
+}
+
+.lei-1 select{
+	height: 26px;
+}
+.lei-13{
+	text-align: right;
+}
+
+/*列表部分*/
+.lei-21{
+	overflow: hidden;
+    border: solid 1px #CCCCCC;
+    padding: 10px;
+    line-height: 22px;
+}
+.lei-2add{
+	float: right;
+}
+.lei-22{
+	background-color: white;
+	 border: solid 1px #CCCCCC;
+	padding: 15px;
+}
+.lei-22 table{
+	border: solid 1px #CCCCCC;
+}

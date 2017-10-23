@@ -58,11 +58,11 @@ main{
 }
 /*玩家匹配右边部分*/
 .match_p2t{
-	min-height: 200px;
+	height: 300px;
 	border-left: solid 1px #CCCCCC;
-	overflow: hidden;
+	overflow: auto;
 	box-sizing: border-box;
-	padding: 0 30px 40px;
+	padding: 0 30px;
 	font-size: 18px;
 	color: #8C8C8C;
 	letter-spacing: 5px;
@@ -165,7 +165,8 @@ input[type=range]::-webkit-slider-thumb {
 
 .sliding_1{
 	height: 5px;
-	background: linear-gradient(to right , #FFA500, #ffe88d 30% ,#ffe88d 10%);
+	background-color: #ffe88d;
+	/*background: linear-gradient(to right , #FFA500, #ffe88d 30% ,#ffe88d 10%);*/
   
 }
 
@@ -223,7 +224,7 @@ input[type=range]:focus {
 		margin-top: 0;
 	}
 	.match_p2t {
-		padding: 0 0 40px;
+		padding: 0;
 	}
 	.match_p1{
 		font-size: 1.5rem;
